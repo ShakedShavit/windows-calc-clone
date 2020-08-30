@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+}
+
+.calc__container {
+    border: 1px solid black;
+    width: 325px;
+    height: 425px;
+    background: rgba(246, 246, 246, 1);
+    margin: auto;
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+
+.header__display {
+
+}
+
+.selectors__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "remainder clear-entry clear erase-last-number"
+    "divide-1-by-x x-squared square-root-of-x divide"
+    "num7 num8 num9 timesOP"
+    "num4 num5 num6 minus"
+    "num1 num2 num3 plus"
+    "change-sign num0 decimalOP equale";
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    padding: 5px;
+}
+
+.operator {
+    background: rgba(250, 250, 250, 1);
+    text-align: center;
+    padding: 20% 0 0 0;
+}
+
+.number {
+    background: rgba(255, 255, 255, 1);
+    font-size: 125%;
+    font-weight: 1000;
+    text-align: center;
+    padding: 20% 0 0 0;
+}
+
+.last-line-operator {
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 20% 0 0 0;
+}
+
+.equale-operator {
+    background: rgb(170, 205, 255);
+    text-align: center;
+    padding: 20% 0 0 0;
+}
+
+.remainder {
+    grid-area: remainder;
+}
+.clear-entry {
+    grid-area: clear-entry;
+}
+.clear {
+    grid-area: clear;
+}
+.erase-last-number {
+    grid-area: erase-last-number;
+}
+.divide-1-by-x {
+    grid-area: divide-1-by-x;
+}
+.x-squared {
+    grid-area: x-squared;
+}
+.square-root-of-x {
+    grid-area: square-root-of-x;
+}
+.divide {
+    grid-area: divide;
+}
+.num7 {
+    grid-area: num7;
+}
+.num8 {
+    grid-area: num8;
+}
+.num9 {
+    grid-area: num9;
+}
+.times operator {
+    grid-area: timesOP; /*times is a key word do I changed the name to - time operator*/
+}
+.num4 {
+    grid-area: num4;
+}
+.num5 {
+    grid-area: num5;
+}
+.num6 {
+    grid-area: num6;
+}
+.minus {
+    grid-area: minus;
+}
+.num1 {
+    grid-area: num1;
+}
+.num2 {
+    grid-area: num2;
+}
+.num3 {
+    grid-area: num3;
+}
+.plus {
+    grid-area: plus;
+}
+.change-sign {
+    grid-area: change-sign;
+}
+.num0 {
+    grid-area: num0;
+}
+.decimal {
+    grid-area: decimalOP; /*decimal is a key word do I changed the name to - decimal operator*/
+}
+.equale {
+    grid-area: equale;
+}
