@@ -8,38 +8,42 @@
 </head>
 <body>
     <div class="calc__container">
-        <div class="header__display"></div>
+        <div class="full__header" id="full-header">
+            <div class="overflow__arrow overflow__arrow-hidden overflow__arrow-open" id="arrow-open">&#x276F</div>
+            <div class="header__display" id="display">0</div>
+            <div class="overflow__arrow overflow__arrow-hidden overflow__arrow-close" id="arrow-close">&#x276E</div>
+        </div>
 
-        <div class="selectors__container">
-            <div class="remainder operator">%</div>
-            <div class="clear-entry operator">CE</div>
-            <div class="clear operator">C</div>
-            <div class="erase-last-number operator">ER</div>
+        <div class="selectors__container" id="selectors-container">
+            <div class="remainder operator" id="remainder">%</div>
+            <div class="clear-entry operator" id="clear-entry">CE</div>
+            <div class="clear operator" id="clear">C</div>
+            <div class="erase-last-number operator" id="erase-last-number">&#9003</div>
 
-            <div class="divide-1-by-x operator">1/x</div>
-            <div class="x-squared operator">x^2</div>
-            <div class="square-root-of-x operator">#x</div>
-            <div class="divide operator">/</div>
+            <div class="divide-1-by-x operator" id="divide-1-by-x">&#x215F&#119909</div>
+            <div class="x-squared operator" id="x-squared">&#119909&#178</div>
+            <div class="square-root-of-x operator" id="square-root-of-x">&#178&#8730&#773&#119909</div>
+            <div class="divide operator" id="divide">&divide</div>
             
-            <div class="num7 number">7</div>
-            <div class="num8 number">8</div>
-            <div class="num9 number">9</div>
-            <div class="times operator">*</div>
+            <div class="num7 number" id="7">7</div>
+            <div class="num8 number" id="8">8</div>
+            <div class="num9 number" id="9">9</div>
+            <div class="times operator" id="times">&times</div>
 
-            <div class="num4 number">4</div>
-            <div class="num5 number">5</div>
-            <div class="num6 number">6</div>
-            <div class="minus operator">-</div>
+            <div class="num4 number" id="4">4</div>
+            <div class="num5 number" id="5">5</div>
+            <div class="num6 number" id="6">6</div>
+            <div class="minus operator" id="minus">&#8211</div>
 
-            <div class="num1 number">1</div>
-            <div class="num2 number">2</div>
-            <div class="num3 number">3</div>
-            <div class="plus operator">+</div>
+            <div class="num1 number" id="1">1</div>
+            <div class="num2 number" id="2">2</div>
+            <div class="num3 number" id="3">3</div>
+            <div class="plus operator" id="plus">+</div>
 
-            <div class="change-sign last-line-operator">+/-</div>
-            <div class="num0 number">0</div>
-            <div class="decimal last-line-operator">.</div>
-            <div class="equale equale-operator">=</div>
+            <div class="change-sign last-line-operator" id="change-sign"><sup>+</sup>/<sub>&#8211</sub></div>
+            <div class="num0 number" id="0">0</div>
+            <div class="decimal last-line-operator" id="decimal">.</div>
+            <div class="equale equale-operator" id="equale">=</div>
         </div>
     </div>
 

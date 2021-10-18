@@ -1,9 +1,10 @@
 * {
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .calc__container {
-    border: 1px solid black;
+    border: 1px solid rgb(125, 125, 125);
     width: 325px;
     height: 425px;
     background: rgba(246, 246, 246, 1);
@@ -12,8 +13,57 @@
     grid-template-rows: 25% 75%;
 }
 
+.full__header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+    "empty"
+    "display";
+}
+.full__header-with-overflow {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+    "empty empty empty"
+    "arrowClose display arrowOpen";
+}
 .header__display {
-
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 250%;
+    font-weight: 600;
+    overflow: hidden;
+    grid-area: display;
+    margin: 0 8px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+.header__display-other__end {
+    flex-direction: row;
+}
+.overflow__arrow {
+    font-weight: 500;
+    font-size: 250%;
+    color: gray;
+}
+.overflow__arrow-open {
+    width: 32.5px;
+    grid-area: arrowOpen;
+}
+.overflow__arrow-close {
+    width: 32.5px;
+    grid-area: arrowClose;
+    padding-left: 5px;
+}
+.overflow__arrow-visible {
+    display: inline-block;
+}
+.overflow__arrow-hidden {
+    display: none;
 }
 
 .selectors__container {
@@ -27,39 +77,45 @@
     "num4 num5 num6 minus"
     "num1 num2 num3 plus"
     "change-sign num0 decimalOP equale";
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
     padding: 5px;
 }
 
 .operator {
     background: rgba(250, 250, 250, 1);
     text-align: center;
-    padding: 20% 0 0 0;
+    padding: 15% 0 0 0;
 }
 
 .number {
-    background: rgba(255, 255, 255, 1);
-    font-size: 125%;
-    font-weight: 1000;
+    background: rgb(254, 254, 254);
+    font-size: 115%;
+    font-weight: 600;
     text-align: center;
-    padding: 20% 0 0 0;
+    padding: 15% 0 0 0;
 }
 
 .last-line-operator {
-    background: rgba(255, 255, 255, 1);
+    background: rgb(254, 254, 254);
     text-align: center;
+    padding: 15% 0 0 0;
+}
+
+.decimal {
     padding: 20% 0 0 0;
+    font-weight: 700;
 }
 
 .equale-operator {
     background: rgb(170, 205, 255);
     text-align: center;
-    padding: 20% 0 0 0;
+    padding: 15% 0 0 0;
 }
 
 .remainder {
     grid-area: remainder;
+    font-size: 125%;
 }
 .clear-entry {
     grid-area: clear-entry;
@@ -69,6 +125,8 @@
 }
 .erase-last-number {
     grid-area: erase-last-number;
+    font-size: 115%;
+    font-weight: 600;
 }
 .divide-1-by-x {
     grid-area: divide-1-by-x;
@@ -81,6 +139,9 @@
 }
 .divide {
     grid-area: divide;
+    font-size: 200%;
+    font-weight: 300;
+    padding: 0 0 10% 0;
 }
 .num7 {
     grid-area: num7;
@@ -91,8 +152,11 @@
 .num9 {
     grid-area: num9;
 }
-.times operator {
+.times {
     grid-area: timesOP; /*times is a key word do I changed the name to - time operator*/
+    font-size: 200%;
+    font-weight: 300;
+    padding: 0 0 10% 0;
 }
 .num4 {
     grid-area: num4;
@@ -105,6 +169,9 @@
 }
 .minus {
     grid-area: minus;
+    font-size: 200%;
+    font-weight: 300;
+    padding: 0 0 10% 0;
 }
 .num1 {
     grid-area: num1;
@@ -117,9 +184,14 @@
 }
 .plus {
     grid-area: plus;
+    font-size: 200%;
+    font-weight: 300;
+    padding: 0 0 10% 0;
 }
 .change-sign {
     grid-area: change-sign;
+    font-size: 105%;
+    font-weight: 600;
 }
 .num0 {
     grid-area: num0;
@@ -129,4 +201,22 @@
 }
 .equale {
     grid-area: equale;
+}
+
+.mouse__over {
+    background: rgba(210, 210, 210, 1);
+}
+.equale__mouse__over {
+    background: rgba(80, 150, 235, 1);
+}
+.overflow-arrow__mouse__over {
+    color: rgba(80, 150, 235, 1);
+}
+
+.disabled {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.empty {
+    grid-area: empty;
 }
